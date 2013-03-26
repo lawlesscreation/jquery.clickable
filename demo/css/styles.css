@@ -1,0 +1,39 @@
+.clickable-hover {
+  cursor: pointer;
+}
+
+
+/* DEMO CSS */
+h1,
+h2,
+h3,
+h4 {clear: both; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+}
+
+th {background: #ccc; }
+
+.box {
+  width: 21%;
+  margin: 1%;
+  padding: 1%;
+  float: left;
+  box-shadow: 0 5px 5px rgba(0,0,0,.25);
+  background-color:#709470;
+  background:-moz-linear-gradient(top,  #BFCFBF,  #709470);
+  background:-webkit-linear-gradient(top,  #BFCFBF,  #709470);
+  background:-ms-linear-gradient(top,  #BFCFBF,  #709470);
+  background:linear-gradient(top,  #BFCFBF,  #709470);
+}
+
+.box h4 {margin-top: 1em; }
