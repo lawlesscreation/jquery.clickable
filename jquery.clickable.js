@@ -25,12 +25,12 @@
   // Create the defaults once
   var pluginName = "jqueryClickable",
       defaults = {
-        clickable_child : null,                        // Used to make a child element clickable of which the script was executed
-        select_link : null,                            // Used to specify which link to use within the clickable box should more than one link be found
-        clickable_class : 'clickable',                 // The class that gets added to elements which have been successfully initialized
-        hover_class : 'clickable-hover',               // The class that gets added to the onHover state of clickable elements
-        focus_class : 'clickable-focus',               // The class that gets added to the onFocus state of clickable elements
-        url_prefixes : ['http://', 'https://', 'www.'] // An array of different prefixes that can appear before each link
+        clickable_child: null,                        // Used to make a child element clickable of which the script was executed
+        select_link: null,                            // Used to specify which link to use within the clickable box should more than one link be found
+        clickable_class: 'clickable',                 // The class that gets added to elements which have been successfully initialized
+        hover_class: 'clickable-hover',               // The class that gets added to the onHover state of clickable elements
+        focus_class: 'clickable-focus',               // The class that gets added to the onFocus state of clickable elements
+        url_prefixes: ['http://', 'https://', 'www.'] // An array of different prefixes that can appear before each link
       };
 
   // The actual plugin constructor

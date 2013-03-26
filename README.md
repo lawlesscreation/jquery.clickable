@@ -18,12 +18,12 @@ $(document).ready(function(){
   $('#clickable-box').find('.box').jqueryClickable();
 
   $('#clickable-image').find('.box').jqueryClickable({
-    clickable_child : 'img'
+    clickable_child: 'img'
   });
 
   $('#clickable-image-from-heading').find('.box').jqueryClickable({
-    clickable_child : 'img',
-    select_link : 'h4'
+    clickable_child: 'img',
+    select_link: 'h4'
   });
 });
 ```
