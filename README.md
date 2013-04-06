@@ -3,7 +3,7 @@
 
 Built using the awesome <a href="https://github.com/jquery-boilerplate/boilerplate/">jQuery Boilerplate</a>.
 
-## Requiremenets
+## Requirements
  - jQuery (tested with 1.9.x);
 
 ## Usage
