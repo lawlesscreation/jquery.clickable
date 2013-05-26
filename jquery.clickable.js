@@ -23,7 +23,7 @@
   // minified (especially when both are regularly referenced in your plugin).
 
   // Create the defaults once
-  var pluginName = "jqueryClickable",
+  var pluginName = 'jqueryClickable',
       defaults = {
         clickable_child: null,                        // Used to make a child element clickable of which the script was executed
         select_link: null,                            // Used to specify which link to use within the clickable box should more than one link be found
