@@ -64,7 +64,6 @@ Include the following scripts in your page, best at the bottom:
 $(document).ready(function(){
   $('#clickable-box').find('.box').jqueryClickable();
 });
-</script>
 ```
 
 ## Example: Link image
