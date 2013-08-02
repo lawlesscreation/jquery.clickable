@@ -37,8 +37,8 @@
     <h2>Usage</h2>
     <p>Include the following scripts in your page, best at the bottom:</p>
     <pre>
-      <script src="js/jquery/1.9.1/jquery.min.js"></script>
-      <script src="../jquery.clickable.min.js"></script>
+    &lt;script src="js/jquery/1.9.1/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script src="../jquery.clickable.min.js"&gt;&lt;/script&gt;
     </pre>
 
     <h2>Options &amp; defaults</h2>
@@ -85,12 +85,10 @@
     </table>
 
     <h2>Example: Link target</h2>
-    <pre> 
-    &lt;script&gt;
-      $(document).ready(function(){
-        $('#clickable-box').find('.box').jqueryClickable();
-      });
-    &lt;/script&gt;
+    <pre>
+    $(document).ready(function(){
+      $('#clickable-box').find('.box').jqueryClickable();
+    });
     </pre>
 
     <h3>Result</h3>
@@ -118,14 +116,12 @@
 
 
     <h2>Example: Link image</h2>
-    <pre> 
-    &lt;script&gt;
-      $(document).ready(function(){
-        $('#clickable-image').find('.box').jqueryClickable({
-          clickable_child : 'img'
-        });
+    <pre>
+    $(document).ready(function(){
+      $('#clickable-image').find('.box').jqueryClickable({
+        clickable_child : 'img'
       });
-    &lt;/script&gt;
+    });
     </pre>
 
     <h3>Result</h3>
@@ -157,15 +153,13 @@
 
 
     <h2>Example: Link image from heading</h2>
-    <pre> 
-    &lt;script&gt;
-      $(document).ready(function(){
-        $('#clickable-image-from-heading').find('.box').jqueryClickable({
-          clickable_child : 'img',
-          select_link : 'h4'
-        });
+    <pre>
+    $(document).ready(function(){
+      $('#clickable-image-from-heading').find('.box').jqueryClickable({
+        clickable_child : 'img',
+        select_link : 'h4'
       });
-    &lt;/script&gt;
+    });
     </pre>
 
     <h3>Result</h3>

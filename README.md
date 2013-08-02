@@ -61,34 +61,29 @@ Include the following scripts in your page, best at the bottom:
 
 ## Example: Link target
 ```javascript 
-<script>
-  $(document).ready(function(){
-    $('#clickable-box').find('.box').jqueryClickable();
-  });
+$(document).ready(function(){
+  $('#clickable-box').find('.box').jqueryClickable();
+});
 </script>
 ```
 
 ## Example: Link image
 ```javascript 
-<script>
-  $(document).ready(function(){
-    $('#clickable-image').find('.box').jqueryClickable({
-      clickable_child : 'img'
-    });
+$(document).ready(function(){
+  $('#clickable-image').find('.box').jqueryClickable({
+    clickable_child : 'img'
   });
-</script>
+});
 ```
 
 ## Example: Link image from heading
 ```javascript 
-<script>
-  $(document).ready(function(){
-    $('#clickable-image-from-heading').find('.box').jqueryClickable({
-      clickable_child : 'img',
-      select_link : 'h4'
-    });
+$(document).ready(function(){
+  $('#clickable-image-from-heading').find('.box').jqueryClickable({
+    clickable_child : 'img',
+    select_link : 'h4'
   });
-</script>
+});
 ```
 
  - Copyright &copy; 2013 [@lawlesscreation](http://twitter.com/lawlesscreation)
