@@ -1,0 +1,180 @@
+/*
+ * STYLES CSS
+ * for the gh-pages demo only. Not required for functionality.
+ */
+
+html {
+  border-top: 8px solid #444;
+  padding: 0 5%;
+  background: url(../img/bg-20.gif);
+  color: #444;
+}
+
+.main {overflow: hidden; }
+
+
+/* TYPOGRAPHY
+----------------------------------------------------------------------------------*/
+body {font:87.5%/1.5 Futura, "Century Gothic", "Apple Gothic", sans-serif; }
+
+
+/* HEADINGS
+------------------------------------------*/
+h1,h2,h3,h4,h5,h6 {
+  margin: .75em 0 0;
+  clear: both;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 299.95%;
+  margin: .5em 0 0;
+}
+
+h2 {
+  font-size: 174%;
+  margin: 1.25em 0 .25em;
+}
+
+h3 {
+  font-size: 131%;
+  margin: 1em 0 .25em;
+}
+
+h4 {
+  font-size: 116%;
+  margin: 1.5em 0 .25em;
+}
+
+h5 {
+  font-size: 100%;
+  margin: 1.5em 0 .25em;
+}
+
+h6 {font-size: 100%; }
+
+
+/* TEXT
+------------------------------------------*/
+p {margin: 1em 0; }
+
+pre {
+  background-color: #EDF6F8;
+  border: 1px solid #DDD;
+  margin: 1em 0;
+  overflow: hidden;
+  padding: 1.5em 5px 5px;
+  position: relative;
+}
+
+pre:after {
+  background-color: #F5F5F5;
+  border: 1px solid #DDD;
+  color: #9DA0A4;
+  content: "Code";
+  font-size: 12px;
+  font-weight: 700;
+  left: -1px;
+  padding: 3px 7px;
+  position: absolute;
+  top: -1px;
+}
+
+
+/* LINKS
+------------------------------------------*/
+a {
+  color: #3E5FEA;
+  text-decoration: none;
+}
+
+a:link {text-decoration: underline; }
+
+a:hover,
+a:focus,
+a:active {text-decoration: none; }
+
+
+/* IMAGES
+------------------------------------------*/
+img {max-width: 100%; }
+
+
+/* TABLES
+------------------------------------------*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: #fff;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+}
+
+th {background: #ccc; }
+
+
+/* COMPONENTS
+----------------------------------------------------------------------------------*/
+/* BUTTONS */
+.btn,
+.btn:link {
+  background: none repeat scroll 0 0 #EEE;
+  border: 1px solid #AAA;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25), 0 0 3px #FFF inset;
+  color: #444;
+  display: inline-block;
+  font-weight: 700;
+  margin: 1em 10px 1em 0;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn:hover,
+.btn:focus {text-decoration: underline; }
+
+
+/* BOX */
+.box {
+  width: 21%;
+  margin: 1%;
+  padding: .75%;
+  float: left;
+  box-shadow: 0 5px 5px rgba(0,0,0,.25);
+  border: 1px solid #ddd;
+  background-color:#fff;
+}
+
+.box h4 {margin-top: 1em; }
+
+
+/* HEADER */
+.header { }
+
+.header .tagline {
+  font-size: 121.4%;
+  font-weight: 400;
+  margin: 0;
+}
+
+
+/* FOOTER */
+.footer {
+  margin-top: 40px;
+  clear: both;
+}
+
+.footer ul,
+.footer li {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer li {margin-bottom: 5px; }
+
