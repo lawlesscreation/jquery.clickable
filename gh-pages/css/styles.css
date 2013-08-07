@@ -5,10 +5,12 @@
 
 html {
   border-top: 8px solid #444;
-  padding: 0 5%;
   background: url(../img/bg-20.gif);
   color: #444;
 }
+
+.header,
+.main {padding: 0 5%; }
 
 .main {overflow: hidden; }
 
@@ -169,15 +171,13 @@ th {background: #ccc; }
 
 /* FOOTER */
 .footer {
-  margin-top: 40px;
+  background-color: #F1F1F1;
+  border-top: 1px solid #DDD;
   clear: both;
+  color: #666;
+  font-size: 14px;
+  margin-top: 2em;
+  padding: 15px 0 30px;
+  text-align: center;
 }
-
-.footer ul,
-.footer li {
-  list-style-type: none;
-  padding: 0;
-}
-
-.footer li {margin-bottom: 5px; }
 

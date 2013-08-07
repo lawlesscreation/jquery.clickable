@@ -85,5 +85,9 @@ $(document).ready(function(){
 });
 ```
 
- - Copyright &copy; 2013 [@lawlesscreation](http://twitter.com/lawlesscreation)
- - Licenced under [MIT](http://opensource.org/licenses/mit-license.php)
+## Release history
+ - v1.0 Tagged stable version for release.
+
+Copyright &copy; 2013 [@lawlesscreation](http://twitter.com/lawlesscreation)
+
+Licenced under [MIT](http://opensource.org/licenses/mit-license.php)

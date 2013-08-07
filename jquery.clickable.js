@@ -1,9 +1,9 @@
 /*!
- * Name: jQuery Clickable
+ * Name: jQuery.clickable
  * Description: Designed to make other elements clickable/tapable/pressable based on a sibling or child links!
- * Version: 0.9
+ * Version: 1.0
  * 
- * Author: Matt Lawson
+ * Author: @lawlesscreation
  * License: licenced under MIT - http://opensource.org/licenses/mit-license.php
  */
 
