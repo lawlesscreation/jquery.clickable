@@ -86,7 +86,7 @@ $(document).ready(function(){
 ```
 
 ## Release history
- - v1.0 Tagged stable version for release.
+ - v1.0 RELEASE. Tagged stable version for release.
 
 Copyright &copy; 2013 [@lawlesscreation](http://twitter.com/lawlesscreation)
 

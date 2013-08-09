@@ -60,6 +60,14 @@ h6 {font-size: 100%; }
 ------------------------------------------*/
 p {margin: 1em 0; }
 
+code {
+  background-color: #EDF6F8;
+  border: 1px solid #DDD;
+  white-space: pre;
+  padding: 1px 3px;
+  border-radius: 3px;
+}
+
 pre {
   background-color: #EDF6F8;
   border: 1px solid #DDD;
