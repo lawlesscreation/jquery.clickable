@@ -86,7 +86,8 @@ $(document).ready(function(){
 ```
 
 ## Release history
- - v1.0 RELEASE. Tagged stable version for release.
+ - v1.0 RELEASE. Tagged stable version for release (2013-08-07).
+ - v0.9 File dump of version 0.9 - work so far.
 
 Copyright &copy; 2013 [@lawlesscreation](http://twitter.com/lawlesscreation)
 
