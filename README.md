@@ -91,4 +91,4 @@ $(document).ready(function(){
 
 Copyright &copy; 2013 [@lawlesscreation](http://twitter.com/lawlesscreation)
 
-Licenced under [MIT](http://opensource.org/licenses/mit-license.php)
+Licensed under [MIT](http://opensource.org/licenses/mit-license.php)
