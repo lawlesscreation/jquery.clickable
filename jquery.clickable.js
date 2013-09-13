@@ -150,7 +150,13 @@
      * otherwise apply the click handler to the clickable box
      */
     bindLink: function ($self, box, link_attrs) {
-      var $bind_target = ($self.options.clickable_child && $(box).find($self.options.clickable_child).length > 0) ? $(box).find($self.options.clickable_child) : box;
+      var $bind_target;
+
+      if ( $self.options.clickable_child && $(box).find($self.options.clickable_child).length > 0 ) {
+        $bind_target = $(box).find($self.options.clickable_child); 
+      } else {
+        $bind_target = box;
+      }
 
       if( link_attrs.target === '_blank' ) {
         $bind_target.on('click', function(e) {
@@ -185,9 +191,21 @@
      * @return: Object containing the $links attributes
      */
     getAttrs: function (link_element) {
-      var href = ($(link_element).attr('href') !== "") ? $(link_element).attr('href') : null,
-          target = ($(link_element).attr('target') !== "") ? $(link_element).attr('target') : null,
-          text = $(link_element).text();
+      var text = $(link_element).text(),
+          href,
+          target;
+
+      if ( $(link_element).attr('href') !== "" ) {
+        href = $(link_element).attr('href');
+      } else {
+        href = null;
+      }
+
+      if ( $(link_element).attr('target') !== "" ) {
+        target = $(link_element).attr('target');
+      } else {
+        target = null;
+      }
 
       return {href : href, target : target, text : text};
     }
