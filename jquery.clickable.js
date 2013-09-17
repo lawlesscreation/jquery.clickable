@@ -1,8 +1,9 @@
 /*!
- * Name: jQuery.clickable
- * Description: Designed to make other elements clickable/tapable/pressable based on a sibling or child links!
- * Version: 1.0
+ * jQuery.clickable
+ *
+ * Designed to make other elements clickable/tapable/pressable based on a sibling or child links!
  * 
+ * Version: 1.1
  * Author: @lawlesscreation
  * License: licenced under MIT - http://opensource.org/licenses/mit-license.php
  */
@@ -98,7 +99,8 @@
 
 
     /*
-     * Check that all link href attributes in an array are identical
+     * Function to check that all link href attributes in an array are identical
+     *
      * @return boolean: true if all of the $links are identical, otherwise false
      */
     identicalHref: function ($self, $links) {
@@ -119,6 +121,7 @@
 
     /*
      * Function for extracting the full url from a link and trimming it
+     *
      * @return string: A trimmed url (prefixes removed)
      */
     getTrimmedUrl: function ($self, link) {
@@ -128,6 +131,7 @@
 
     /*
      * Function for removing standard URL prefixes specified in defaults
+     *
      * @return string: The trimmed url (prefixes removed)
      */
     trimUrl: function ($self, url) {
@@ -188,6 +192,7 @@
 
     /*
      * Function used to get attributes from a link
+     *
      * @return: Object containing the $links attributes
      */
     getAttrs: function (link_element) {
