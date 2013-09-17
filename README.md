@@ -1,7 +1,7 @@
 # jQuery.clickable
 ###### Designed to make other elements clickable/tapable/pressable using its sibling or child links!
 
- - [View on GitHub](https://github.com/lawlesscreation/jquery.clickable)
+ - [View demo](http://lawlesscreation.github.io/jquery.clickable/)
  - [Download ZIP](https://github.com/lawlesscreation/jquery.clickable/archive/master.zip)
 
 Built using the awesome [jQuery Boilerplate](https://github.com/jquery-boilerplate/boilerplate/) template.
