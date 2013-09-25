@@ -3,9 +3,9 @@
  *
  * Designed to make other elements clickable/tapable/pressable based on a sibling or child links!
  * 
- * Version: 1.1
- * Author: @lawlesscreation
- * License: licenced under MIT - http://opensource.org/licenses/mit-license.php
+ * @version: 1.1
+ * @author: @lawlesscreation
+ * @license: licenced under MIT - http://opensource.org/licenses/mit-license.php
  */
 
 // the semi-colon before function invocation is a safety net against concatenated
