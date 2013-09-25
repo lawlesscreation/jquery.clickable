@@ -4,6 +4,7 @@
  * Designed to make other elements clickable/tapable/pressable based on a sibling or child links!
  * 
  * @version: 1.1
+ * @url: https://github.com/lawlesscreation/jquery.clickable
  * @author: @lawlesscreation
  * @license: licenced under MIT - http://opensource.org/licenses/mit-license.php
  */
