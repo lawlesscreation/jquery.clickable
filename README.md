@@ -61,14 +61,14 @@ Include the following scripts in your page, best at the bottom:
 
 ## Example: Link target
 ```javascript 
-$(document).ready(function(){
+$(function(){
   $('#clickable-box').find('.box').jqueryClickable();
 });
 ```
 
 ## Example: Link image
 ```javascript 
-$(document).ready(function(){
+$(function(){
   $('#clickable-image').find('.box').jqueryClickable({
     clickable_child : 'img'
   });
@@ -77,7 +77,7 @@ $(document).ready(function(){
 
 ## Example: Link image from heading
 ```javascript 
-$(document).ready(function(){
+$(function(){
   $('#clickable-image-from-heading').find('.box').jqueryClickable({
     clickable_child : 'img',
     select_link : 'h4'
