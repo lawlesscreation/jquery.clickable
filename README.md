@@ -92,3 +92,7 @@ $(function(){
 Copyright &copy; 2013 [@lawlesscreation](http://twitter.com/lawlesscreation)
 
 Licensed under [MIT](http://opensource.org/licenses/mit-license.php)
+
+
+## TODO
+ - Add Callback to function
