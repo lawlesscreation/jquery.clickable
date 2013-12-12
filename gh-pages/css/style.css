@@ -10,7 +10,7 @@ html {
 }
 
 .header,
-.main {padding: 0 5%; }
+.main {padding: 0 10px; }
 
 .main {overflow: hidden; }
 
