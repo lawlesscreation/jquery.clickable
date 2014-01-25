@@ -86,7 +86,7 @@ $(function(){
 ```
 
 ## Release history
- - v1.1.0 Changed to semantic versioning (2014-01-25)
+ - 1.1.0 Changed to semantic versioning (2014-01-25)
 
 Copyright &copy; 2013 [@lawlesscreation](http://twitter.com/lawlesscreation)
 
