@@ -60,14 +60,14 @@ Include the following scripts in your page, best at the bottom:
 </table>
 
 ## Example: Link target
-```javascript 
+```javascript
 $(function(){
   $('#clickable-box').find('.box').jqueryClickable();
 });
 ```
 
 ## Example: Link image
-```javascript 
+```javascript
 $(function(){
   $('#clickable-image').find('.box').jqueryClickable({
     clickable_child : 'img'
@@ -76,7 +76,7 @@ $(function(){
 ```
 
 ## Example: Link image from heading
-```javascript 
+```javascript
 $(function(){
   $('#clickable-image-from-heading').find('.box').jqueryClickable({
     clickable_child : 'img',
@@ -86,6 +86,7 @@ $(function(){
 ```
 
 ## Release history
+ - 1.1.1 
  - 1.1.0 Changed to semantic versioning (2014-01-25)
 
 Copyright &copy; 2013 [@lawlesscreation](http://twitter.com/lawlesscreation)
@@ -94,4 +95,7 @@ Licensed under [MIT](http://opensource.org/licenses/mit-license.php)
 
 
 ## TODO
+ - Update to latest version of jQuery
+ - Add Jasmine tests, JSLint
  - Add Callback to function
+ - Add destroy function
