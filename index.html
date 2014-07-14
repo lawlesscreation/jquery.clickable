@@ -1,217 +1,225 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <title>jQuery.clickable</title>
+    <head>
+        <title>jQuery.clickable</title>
 
-    <meta charset="utf-8" />
-    <meta name="description" content="Designed to make other elements clickable/tapable/pressable using its sibling or child links!" />
-    <meta name="author" content="Matt Lawson" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta name="description" content="Designed to make other elements clickable/tapable/pressable using its sibling or child links!" />
+        <meta name="author" content="Matt Lawson" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" media="screen" href="gh-pages/css/normalize.css" />
-    <link rel="stylesheet" media="screen" href="gh-pages/css/style.css" />
-    <style>
-      .clickable-hover {
-        cursor: pointer;
-      }
-    </style>
-  </head>
+        <link rel="stylesheet" media="screen" href="gh-pages/css/normalize.css" />
+        <link rel="stylesheet" media="screen" href="gh-pages/css/style.css" />
+        <style>
+            .clickable-hover {
+                cursor: pointer;
+            }
+        </style>
+    </head>
 
-  <body>
-    <div class="header" role="banner">
-      <h1>jQuery.clickable</h1>
-      <p class="tagline">Designed to make other elements clickable/tapable/pressable using its sibling or child links!</p>
-    </div><!-- .header -->
+    <body>
+        <div class="header" role="banner">
+            <h1>jQuery.clickable</h1>
+            <p class="tagline">Designed to make other elements clickable/tapable/pressable using its sibling or child links!</p>
+        </div><!-- .header -->
 
-    <div class="main" role="main">
-      <a class="btn" href="https://github.com/lawlesscreation/jquery.clickable">View on GitHub</a>
-      <a class="btn" href="https://github.com/lawlesscreation/jquery.clickable/archive/master.zip">Download ZIP</a>
+        <div class="main" role="main">
+            <a class="btn" href="https://github.com/lawlesscreation/jquery.clickable">View on GitHub</a>
+            <a class="btn" href="https://github.com/lawlesscreation/jquery.clickable/archive/master.zip">Download ZIP</a>
 
-      <p>Built using the awesome <a href="https://github.com/jquery-boilerplate/boilerplate/">jQuery Boilerplate</a> template.</p>
+            <h2>Requirements</h2>
+            <ul>
+                <li><a href="http://jquery.com">jQuery</a> >= v1.9.x</li>
+            </ul>
 
-      <h2>Requirements</h2>
-      <ul>
-        <li><a href="http://jquery.com">jQuery</a> >= v1.9.x</li>
-      </ul>
+            <h2>Usage</h2>
+            <p>To get started you can either:</p>
+            <ul>
+                <li>Clone the repo: <code>git clone https://github.com/lawlesscreation/jquery.clickable.git</code></li>
+                    <li>Or install with Bower: <code>bower install jquery.clickable</code></li>
+            </ul>
+            <p>Then it's just a case of adding required scripts in your page, best at the bottom:</p>
+            <pre>
+            &lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;&lt;/script&gt;
+            &lt;script src="jquery.clickable.min.js"&gt;&lt;/script&gt;
+            </pre>
 
-      <h2>Usage</h2>
-      <p>Include the following scripts in your page, best at the bottom:</p>
-      <pre>
-      &lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;&lt;/script&gt;
-      &lt;script src="jquery.clickable.min.js"&gt;&lt;/script&gt;
-      </pre>
+            <h2>Options &amp; defaults</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Option</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>clickableChild</td>
+                        <td>null</td>
+                        <td>Used to make a child element clickable of which the script was executed</td>
+                    </tr>
+                    <tr>
+                        <td>selectLink</td>
+                        <td>null</td>
+                        <td>Used to specify which link to use within the clickable box should more than one link be found</td>
+                    </tr>
+                    <tr>
+                        <td>clickableClass</td>
+                        <td>clickable</td>
+                        <td>The class that gets added to elements which have been successfully initialized</td>
+                    </tr>
+                    <tr>
+                        <td>hoverClass</td>
+                        <td>clickable-hover</td>
+                        <td>The class that gets added to the onHover state of clickable elements</td>
+                    </tr>
+                    <tr>
+                        <td>focusClass</td>
+                        <td>clickable-focus</td>
+                        <td>The class that gets added to the onFocus state of clickable elements</td>
+                    </tr>
+                    <tr>
+                        <td>urlPrefixes</td>
+                        <td>['http://', 'https://', 'www.']</td>
+                        <td>An array of different prefixes that can appear before each link</td>
+                    </tr>
+                        <tr>
+                        <td>callbackAfter</td>
+                        <td>null</td>
+                        <td>A callback that is triggered after the element has been made clickable</td>
+                    </tr>
+                </tbody>
+            </table>
 
-      <h2>Options &amp; defaults</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Option</th>
-            <th>Default</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>clickable_child</td>
-            <td>null</td>
-            <td>Used to make a child element clickable of which the script was executed</td>
-          </tr>
-          <tr>
-            <td>select_link</td>
-            <td>null</td>
-            <td>Used to specify which link to use within the clickable box should more than one link be found</td>
-          </tr>
-          <tr>
-            <td>clickable_class</td>
-            <td>clickable</td>
-            <td>The class that gets added to elements which have been successfully initialized</td>
-          </tr>
-          <tr>
-            <td>hover_class</td>
-            <td>clickable-hover</td>
-            <td>The class that gets added to the onHover state of clickable elements</td>
-          </tr>
-          <tr>
-            <td>focus_class</td>
-            <td>clickable-focus</td>
-            <td>The class that gets added to the onFocus state of clickable elements</td>
-          </tr>
-          <tr>
-            <td>url_prefixes</td>
-            <td>['http://', 'https://', 'www.']</td>
-            <td>An array of different prefixes that can appear before each link</td>
-          </tr>
-        </tbody>
-      </table>
+            <h2>Example: Link target</h2>
+            <pre>
+            $(function(){
+                $('#clickable-box').find('.box').jqueryClickable();
+            });
+            </pre>
 
-      <h2>Example: Link target</h2>
-      <pre>
-      $(function(){
-        $('#clickable-box').find('.box').jqueryClickable();
-      });
-      </pre>
+            <h3>Result</h3>
+            <div id="clickable-box" class="wrap">
+                <div class="box">
+                    <h4>Single link in target</h4>
+                    <p>A single link within the target. <a href="https://google.com">Google</a>. That will link the whole box!</p>
+                </div><!-- .box -->
 
-      <h3>Result</h3>
-      <div id="clickable-box" class="wrap">
-        <div class="box">
-          <h4>Single link in target</h4>
-          <p>A single link within the target. <a href="https://google.com">Google</a>. That will link the whole box!</p>
-        </div><!-- .box -->
+                <div class="box">
+                    <h4>Multiple same links in target</h4>
+                    <p>Multiple links within the target. <a href="https://google.com">Google</a>. But to the same place, so thats ok. <a href="https://google.com">Google</a>.</p>
+                </div><!-- .box -->
 
-        <div class="box">
-          <h4>Multiple same links in target</h4>
-          <p>Multiple links within the target. <a href="https://google.com">Google</a>. But to the same place, so thats ok. <a href="https://google.com">Google</a>.</p>
-        </div><!-- .box -->
+                <div class="box">
+                    <h4>Link opens in new window</h4>
+                    <p>Best to avoid links opening in a new window, but just incase this should work. <a target="_blank" href="https://google.com">Google</a>.</p>
+                </div><!-- .box -->
 
-        <div class="box">
-          <h4>Link opens in new window</h4>
-          <p>Best to avoid links opening in a new window, but just incase this should work. <a target="_blank" href="https://google.com">Google</a>.</p>
-        </div><!-- .box -->
-
-        <div class="box">
-          <h4>Multiple different links - PLUGIN WILL IGNORE</h4>
-          <p>Multiple links within the target. <a href="https://google.com">Google</a>. But to DIFFERENT places, so the plugin will ignore this. <a href="https://facebook.com">Facebook</a>.</p>
-        </div><!-- .box -->
-      </div><!-- .wrap -->
-
-
-      <h2>Example: Link image</h2>
-      <pre>
-      $(function() {
-        $('#clickable-image').find('.box').jqueryClickable({
-          clickable_child : 'img'
-        });
-      });
-      </pre>
-
-      <h3>Result</h3>
-      <div id="clickable-image" class="wrap">
-        <div class="box">
-          <h4>Single link in target</h4>
-          <img src="gh-pages/img/image.gif" alt="" />
-          <p>A single link within the target. <a href="https://google.com">Google</a>. That will link the whole box!</p>
-        </div><!-- .box -->
-
-        <div class="box">
-          <h4>Multiple same links in target</h4>
-          <img src="gh-pages/img/image.gif" alt="" />
-          <p>Multiple links within the target. <a href="https://google.com">Google</a>. But to the same place, so thats ok. <a href="https://google.com">Google</a>.</p>
-        </div><!-- .box -->
-
-        <div class="box">
-          <h4>Link opens in new window</h4>
-          <img src="gh-pages/img/image.gif" alt="" />
-          <p>Best to avoid links opening in a new window, but just incase this should work. <a target="_blank" href="https://google.com">Google</a>.</p>
-        </div><!-- .box -->
-
-        <div class="box">
-          <h4>Multiple different links - PLUGIN WILL IGNORE</h4>
-          <img src="gh-pages/img/image.gif" alt="" />
-          <p>Multiple links within the target. <a href="https://google.com">Google</a>. But to DIFFERENT places, so the plugin will ignore this. <a href="https://facebook.com">Facebook</a>.</p>
-        </div><!-- .box -->
-      </div><!-- .wrap -->
+                <div class="box">
+                    <h4>Multiple different links - PLUGIN WILL IGNORE</h4>
+                    <p>Multiple links within the target. <a href="https://google.com">Google</a>. But to DIFFERENT places, so the plugin will ignore this. <a href="https://facebook.com">Facebook</a>.</p>
+                </div><!-- .box -->
+            </div><!-- .wrap -->
 
 
-      <h2>Example: Link image from heading</h2>
-      <pre>
-      $(function() {
-        $('#clickable-image-from-heading').find('.box').jqueryClickable({
-          clickable_child : 'img',
-          select_link : 'h4'
-        });
-      });
-      </pre>
+            <h2>Example: Link image</h2>
+            <pre>
+            $(function() {
+                $('#clickable-image').find('.box').jqueryClickable({
+                    clickable_child : 'img'
+                });
+            });
+            </pre>
 
-      <h3>Result</h3>
-      <div id="clickable-image-from-heading" class="wrap">
-        <div class="box">
-          <h4><a href="https://google.com">Single link in target</a></h4>
-          <img src="gh-pages/img/image.gif" alt="" />
-          <p>A single link within the target. <a href="https://facebook.com">Facebook</a>. That will link the whole box!</p>
-        </div><!-- .box -->
+            <h3>Result</h3>
+            <div id="clickable-image" class="wrap">
+                <div class="box">
+                    <h4>Single link in target</h4>
+                    <img src="gh-pages/img/image.gif" alt="" />
+                    <p>A single link within the target. <a href="https://google.com">Google</a>. That will link the whole box!</p>
+                </div><!-- .box -->
 
-        <div class="box">
-          <h4><a href="https://google.com">Multiple same links in target</a></h4>
-          <img src="gh-pages/img/image.gif" alt="" />
-          <p>Multiple links but we only use the one in the header. <a href="https://facebook.com">Facebook</a>. But to the same place, so thats ok. <a href="https://facebook.com">Facebook</a>.</p>
-        </div><!-- .box -->
+                <div class="box">
+                    <h4>Multiple same links in target</h4>
+                    <img src="gh-pages/img/image.gif" alt="" />
+                    <p>Multiple links within the target. <a href="https://google.com">Google</a>. But to the same place, so thats ok. <a href="https://google.com">Google</a>.</p>
+                </div><!-- .box -->
 
-        <div class="box">
-          <h4><a target="_blank" href="https://google.com">Link opens in new window</a></h4>
-          <img src="gh-pages/img/image.gif" alt="" />
-          <p>Best to avoid links opening in a new window, but just incase this should work. Google.</p>
-        </div><!-- .box -->
+                <div class="box">
+                    <h4>Link opens in new window</h4>
+                    <img src="gh-pages/img/image.gif" alt="" />
+                    <p>Best to avoid links opening in a new window, but just incase this should work. <a target="_blank" href="https://google.com">Google</a>.</p>
+                </div><!-- .box -->
 
-        <div class="box">
-          <h4><a href="https://google.com">Multiple different links</a></h4>
-          <img src="gh-pages/img/image.gif" alt="" />
-          <p>Multiple links but we only use the one in the heading. <a href="https://facebook.com">Facebook</a>. <a href="https://hotmail.com">Hotmail</a>.</p>
-        </div><!-- .box -->
-      </div><!-- .wrap -->
-    </div><!-- .main -->
+                <div class="box">
+                    <h4>Multiple different links - PLUGIN WILL IGNORE</h4>
+                    <img src="gh-pages/img/image.gif" alt="" />
+                    <p>Multiple links within the target. <a href="https://google.com">Google</a>. But to DIFFERENT places, so the plugin will ignore this. <a href="https://facebook.com">Facebook</a>.</p>
+                </div><!-- .box -->
+            </div><!-- .wrap -->
 
-    <div class="footer" role="contentinfo">
-      <p>Copyright &copy; 2013 <a href="http://twitter.com/lawlesscreation">@lawlesscreation</a></p>
-      <p>Licensed under <a href="http://opensource.org/licenses/mit-license.php">MIT</a></p>
-    </div><!-- .footer -->
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="gh-pages/js/jquery/1.9.1/jquery.min.js"><\/script>')</script>
-    <script src="jquery.clickable.min.js"></script>
-    <script>
-      // Demo examples
-      $(function(){
-        $('#clickable-box').find('.box').jqueryClickable();
+            <h2>Example: Link image from heading</h2>
+            <pre>
+            $(function() {
+                $('#clickable-image-from-heading').find('.box').jqueryClickable({
+                    clickable_child : 'img',
+                    select_link : 'h4'
+                });
+            });
+            </pre>
 
-        $('#clickable-image').find('.box').jqueryClickable({
-          clickable_child : 'img'
-        });
+            <h3>Result</h3>
+            <div id="clickable-image-from-heading" class="wrap">
+                <div class="box">
+                    <h4><a href="https://google.com">Single link in target</a></h4>
+                    <img src="gh-pages/img/image.gif" alt="" />
+                    <p>A single link within the target. <a href="https://facebook.com">Facebook</a>. That will link the whole box!</p>
+                </div><!-- .box -->
 
-        $('#clickable-image-from-heading').find('.box').jqueryClickable({
-          clickable_child : 'img',
-          select_link : 'h4'
-        });
-      });
-    </script>
-  </body>
+                <div class="box">
+                    <h4><a href="https://google.com">Multiple same links in target</a></h4>
+                    <img src="gh-pages/img/image.gif" alt="" />
+                    <p>Multiple links but we only use the one in the header. <a href="https://facebook.com">Facebook</a>. But to the same place, so thats ok. <a href="https://facebook.com">Facebook</a>.</p>
+                </div><!-- .box -->
+
+                <div class="box">
+                    <h4><a target="_blank" href="https://google.com">Link opens in new window</a></h4>
+                    <img src="gh-pages/img/image.gif" alt="" />
+                    <p>Best to avoid links opening in a new window, but just incase this should work.</p>
+                </div><!-- .box -->
+
+                <div class="box">
+                    <h4><a href="https://google.com">Multiple different links</a></h4>
+                    <img src="gh-pages/img/image.gif" alt="" />
+                    <p>Multiple links but we only use the one in the heading. <a href="https://facebook.com">Facebook</a>. <a href="https://hotmail.com">Hotmail</a>.</p>
+                </div><!-- .box -->
+            </div><!-- .wrap -->
+        </div><!-- .main -->
+
+        <div class="footer" role="contentinfo">
+            <p>Copyright &copy; 2013 <a href="http://twitter.com/lawlesscreation">@lawlesscreation</a></p>
+            <p>Licensed under <a href="http://opensource.org/licenses/mit-license.php">MIT</a></p>
+        </div><!-- .footer -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="gh-pages/js/jquery/1.9.1/jquery.min.js"><\/script>')</script>
+        <script src="jquery.clickable.js"></script>
+        <script>
+            // Demo examples
+            $(function(){
+                $('#clickable-box').find('.box').jqueryClickable();
+
+                $('#clickable-image').find('.box').jqueryClickable({
+                    clickable_child : 'img'
+                });
+
+                $('#clickable-image-from-heading').find('.box').jqueryClickable({
+                    clickable_child : 'img',
+                    select_link : 'h4'
+                });
+            });
+        </script>
+    </body>
 </html>
