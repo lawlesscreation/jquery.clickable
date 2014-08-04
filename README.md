@@ -110,12 +110,19 @@ $ npm install
 #=> will install all required node packages
 ```
 
-Then simply run the grunt watcher:
+Then simply run either the watcher or build task:
 
 ```bash
 $ grunt
 #=> Running "watch" task
 #=> Waiting...
+```
+
+or
+
+```bash
+$ grunt build
+#=> Done, without errors.
 ```
 
 
@@ -129,4 +136,4 @@ Licensed under [MIT](http://opensource.org/licenses/mit-license.php)
 
 
 ## TODO
- - Nothing.
+ - Finish writing Jasmine test specs.

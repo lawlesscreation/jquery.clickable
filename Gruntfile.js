@@ -81,4 +81,18 @@ module.exports = function(grunt) {
 
     // Default tasks e.g. where we tell Grunt what to do when we type "grunt" into the terminal.
     grunt.registerTask('default', 'watch');
+
+    grunt.registerTask('build', 'Run tests and build all files', function() {
+        /*
+         * Run tests and build all files
+         */
+        grunt.log.subhead('# => Running build!');
+
+        grunt.task.run([
+            'karma',
+            'jshint',
+            'jscs',
+            'uglify'
+        ]);
+    });
 };

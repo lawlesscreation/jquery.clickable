@@ -120,7 +120,7 @@
         return url;
     };
 
-    JqueryClickable.prototype.bindLink = function(self, link_attrs) {
+    JqueryClickable.prototype.bindLink = function(self, linkAttrs) {
         /*
          * Binds click handler to the target specified in defaults if not null,
          * otherwise apply the click handler to the clickable box
@@ -128,26 +128,27 @@
         var bindTarget;
 
         if (self.options.clickableChild && self.element.find(self.options.clickableChild).length > 0) {
-            bindTarget = self.element.find(self.options.clickableChild); 
+            bindTarget = self.element.find(self.options.clickableChild);
         } else {
             bindTarget = self.element;
         }
 
-        if (link_attrs.target === '_blank') {
+        if (linkAttrs.target === '_blank') {
             bindTarget.on('click', function(e) {
                 e.preventDefault();
-                window.open(link_attrs.href); // removed ,link_attrs.text to fix IE issue
+                window.open(linkAttrs.href); // removed ,linkAttrs.text to fix IE issue
             });
         } else {
             bindTarget.on('click', function(e) {
                 e.preventDefault();
-                window.location.href = link_attrs.href;
+                window.location.href = linkAttrs.href;
             });
         }
 
         bindTarget.hover(function() {
             $(bindTarget).addClass(self.options.hoverClass);
-        },function() {
+        },
+        function() {
             bindTarget.removeClass(self.options.hoverClass);
         });
 

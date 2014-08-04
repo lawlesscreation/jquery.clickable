@@ -40,8 +40,8 @@
             </ul>
             <p>Then it's just a case of adding required scripts in your page, best at the bottom:</p>
             <pre>
-            &lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;&lt;/script&gt;
-            &lt;script src="jquery.clickable.min.js"&gt;&lt;/script&gt;
+        &lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;&lt;/script&gt;
+        &lt;script src="jquery.clickable.min.js"&gt;&lt;/script&gt;
             </pre>
 
             <h2>Options &amp; defaults</h2>
@@ -94,9 +94,9 @@
 
             <h2>Example: Link target</h2>
             <pre>
-            $(function(){
-                $('#clickable-box').find('.box').jqueryClickable();
-            });
+        $(function(){
+            $('#clickable-box').find('.box').jqueryClickable();
+        });
             </pre>
 
             <h3>Result</h3>
@@ -125,11 +125,11 @@
 
             <h2>Example: Link image</h2>
             <pre>
-            $(function() {
-                $('#clickable-image').find('.box').jqueryClickable({
-                    clickable_child : 'img'
-                });
+        $(function() {
+            $('#clickable-image').find('.box').jqueryClickable({
+                clickableChild : 'img'
             });
+        });
             </pre>
 
             <h3>Result</h3>
@@ -162,12 +162,12 @@
 
             <h2>Example: Link image from heading</h2>
             <pre>
-            $(function() {
-                $('#clickable-image-from-heading').find('.box').jqueryClickable({
-                    clickable_child : 'img',
-                    select_link : 'h4'
-                });
+        $(function() {
+            $('#clickable-image-from-heading').find('.box').jqueryClickable({
+                clickableChild : 'img',
+                selectLink : 'h4'
             });
+        });
             </pre>
 
             <h3>Result</h3>
@@ -212,14 +212,16 @@
                 $('#clickable-box').find('.box').jqueryClickable();
 
                 $('#clickable-image').find('.box').jqueryClickable({
-                    clickable_child : 'img'
+                    clickableChild : 'img'
                 });
 
                 $('#clickable-image-from-heading').find('.box').jqueryClickable({
-                    clickable_child : 'img',
-                    select_link : 'h4'
+                    clickableChild : 'img',
+                    selectLink : 'h4'
                 });
             });
+//            var target = $('#clickable-box').find('.box:first').jqueryClickable();
+//            alert(target.data('plugin_jqueryClickable').identicalHref(this, this.find('a[href]')));
         </script>
     </body>
 </html>
