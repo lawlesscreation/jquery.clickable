@@ -1,5 +1,6 @@
 # jQuery.clickable [![Build Status](https://travis-ci.org/lawlesscreation/jquery.clickable.svg?branch=master)](https://travis-ci.org/lawlesscreation/jquery.clickable)
-###### Designed to make other elements clickable/tapable/pressable using its sibling or child links!
+
+> Designed to make other elements clickable/tapable/pressable using its sibling or child links!
 
  - [View demo](http://lawlesscreation.github.io/jquery.clickable/)
  - [Download ZIP](https://github.com/lawlesscreation/jquery.clickable/archive/master.zip)
