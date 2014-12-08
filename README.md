@@ -1,4 +1,4 @@
-# jQuery.clickable [![Build Status](https://travis-ci.org/lawlesscreation/jquery.clickable.svg?branch=master)](https://travis-ci.org/lawlesscreation/jquery.clickable) [![Coverage Status](https://img.shields.io/coveralls/lawlesscreation/jquery.clickable.svg)](https://coveralls.io/r/lawlesscreation/jquery.clickable)
+# jQuery.clickable [![Build Status](https://travis-ci.org/lawlesscreation/jquery.clickable.svg?branch=master)](https://travis-ci.org/lawlesscreation/jquery.clickable)
 
 > Designed to make other elements clickable/tapable/pressable using its sibling or child links!
 
