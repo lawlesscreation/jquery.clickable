@@ -2,14 +2,6 @@
 
 > Designed to make other elements clickable/tapable/pressable using its sibling or child links!
 
- - [View demo](http://lawlesscreation.github.io/jquery.clickable/)
- - [Download ZIP](https://github.com/lawlesscreation/jquery.clickable/archive/master.zip)
-
-
-## Requirements
-
- - [jQuery](http://jquery.com) >= v1.9.x
-
 
 ## Usage
 
