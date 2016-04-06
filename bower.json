@@ -2,7 +2,7 @@
     "name": "jquery.clickable",
     "description": "Designed to make other elements clickable/tapable/pressable using its sibling or child links!",
     "homepage": "https://github.com/lawlesscreation/jquery.clickable",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "main": "jquery.clickable.js",
     "license": "MIT",
     "keywords": [
