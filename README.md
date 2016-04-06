@@ -37,32 +37,37 @@ Then it's just a case of adding required scripts in your page, best at the botto
     </thead>
     <tbody>
         <tr>
-            <td>clickable_child</td>
+            <td>callbackAfter</td>
+            <td>function() {}</td>
+            <td>A callback that is triggered after the element has been made clickable</td>
+        </tr>
+        <tr>
+            <td>clickableChild</td>
             <td>null</td>
             <td>Used to make a child element clickable of which the script was executed</td>
         </tr>
         <tr>
-            <td>select_link</td>
-            <td>null</td>
-            <td>Used to specify which link to use within the clickable box should more than one link be found</td>
-        </tr>
-        <tr>
-            <td>clickable_class</td>
+            <td>clickableClass</td>
             <td>clickable</td>
             <td>The class that gets added to elements which have been successfully initialized</td>
         </tr>
         <tr>
-            <td>hover_class</td>
-            <td>clickable-hover</td>
-            <td>The class that gets added to the onHover state of clickable elements</td>
-        </tr>
-        <tr>
-            <td>focus_class</td>
+            <td>focusClass</td>
             <td>clickable-focus</td>
             <td>The class that gets added to the onFocus state of clickable elements</td>
         </tr>
         <tr>
-            <td>url_prefixes</td>
+            <td>hoverClass</td>
+            <td>clickable-hover</td>
+            <td>The class that gets added to the onHover state of clickable elements</td>
+        </tr>
+        <tr>
+            <td>selectLink</td>
+            <td>null</td>
+            <td>Used to specify which link to use within the clickable box should more than one link be found</td>
+        </tr>
+        <tr>
+            <td>urlPrefixes</td>
             <td>['http://', 'https://', 'www.']</td>
             <td>An array of different prefixes that can appear before each link</td>
         </tr>
@@ -85,7 +90,7 @@ $(function(){
 ```javascript
 $(function(){
     $('#clickable-image').find('.box').jqueryClickable({
-        clickable_child : 'img'
+        clickableChild : 'img'
     });
 });
 ```
@@ -95,8 +100,8 @@ $(function(){
 ```javascript
 $(function(){
     $('#clickable-image-from-heading').find('.box').jqueryClickable({
-        clickable_child : 'img',
-        select_link : 'h4'
+        clickableChild : 'img',
+        selectLink : 'h4'
     });
 });
 ```
@@ -126,15 +131,11 @@ $ grunt build
 #=> Done, without errors.
 ```
 
-
-## Release history
- - 2.0.0 Added Jasmine tests and restructured JavaScript to allow for public methods
- - 1.1.0 Changed to semantic versioning
-
 Copyright &copy; 2013 [@lawlesscreation](http://twitter.com/lawlesscreation)
 
 Licensed under [MIT](http://opensource.org/licenses/mit-license.php)
 
 
 ## TODO
+ - Additional callbacks;
  - Finish writing Jasmine test specs.
