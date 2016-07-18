@@ -1,4 +1,9 @@
-# jQuery.clickable [![Build Status](https://travis-ci.org/lawlesscreation/jquery.clickable.svg?branch=master)](https://travis-ci.org/lawlesscreation/jquery.clickable)
+# jQuery.clickable
+
+[![Build Status](https://travis-ci.org/lawlesscreation/jquery.clickable.svg?branch=master)](https://travis-ci.org/lawlesscreation/jquery.clickable)
+[![NPM version](https://badge.fury.io/js/jquery.clickable.png)](http://badge.fury.io/js/jquery.clickable)
+[![Dependency Status](https://david-dm.org/lawlesscreation/jquery.clickable.png)](https://david-dm.org/lawlesscreation/jquery.clickable.png)
+[![devDependency Status](https://david-dm.org/lawlesscreation/jquery.clickable/dev-status.png)](https://david-dm.org/lawlesscreation/jquery.clickable#info=devDependencies)
 
 > Designed to make other elements clickable/tapable/pressable using its sibling or child links!
 
@@ -8,7 +13,8 @@
 To get started you can either:
 
  - Clone the repo: `git clone https://github.com/lawlesscreation/jquery.clickable.git`
- - Or install with Bower: `bower install jquery.clickable`
+ - Install with npm: `npm install jquery.clickable --save`
+ - Install with Bower: `bower install jquery.clickable --save`
 
 Then it's just a case of adding required scripts in your page, best at the bottom:
 
