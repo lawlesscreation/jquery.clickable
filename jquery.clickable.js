@@ -26,7 +26,11 @@
             // An array of different prefixes that can appear before each link
             urlPrefixes: ['http://', 'https://', 'www.'],
             // A callback that is triggered after the element has been made clickable
-            callbackAfter: function() {}
+            callbackAfter: function() {},
+            // A callback that is triggered in the click event before navigating to link location
+            callbackClickBefore: function() {
+                return true; // ensures that the default is to continue
+            },
         };
 
     function JqueryClickable(element, options) {
@@ -125,6 +129,7 @@
          * Binds click handler to the target specified in defaults if not null,
          * otherwise apply the click handler to the clickable box
          */
+
         var bindTarget;
 
         if (self.options.clickableChild && self.element.find(self.options.clickableChild).length > 0) {
@@ -133,17 +138,22 @@
             bindTarget = self.element;
         }
 
-        if (linkAttrs.target === '_blank') {
-            bindTarget.on('click', function(e) {
-                e.preventDefault();
+        bindTarget.on('click', function(e) {
+            e.preventDefault();
+
+            // if result is true, then continue with the run,
+            // else block the window statements.
+            var result = self.options.callbackClickBefore(e);
+            if (!result) {
+                return false;
+            }
+
+            if (linkAttrs.target === '_blank') {
                 window.open(linkAttrs.href); // removed ,linkAttrs.text to fix IE issue
-            });
-        } else {
-            bindTarget.on('click', function(e) {
-                e.preventDefault();
+            } else {
                 window.location.href = linkAttrs.href;
-            });
-        }
+            }
+        });
 
         bindTarget.hover(function() {
             $(bindTarget).addClass(self.options.hoverClass);

@@ -35,6 +35,11 @@ Then it's just a case of adding required scripts in your page, best at the botto
     </thead>
     <tbody>
         <tr>
+            <td>callbackClickBefore</td>
+            <td>function() {}</td>
+            <td>A callback that is triggered in the click event before navigating to link location</td>
+        </tr>
+        <tr>
             <td>callbackAfter</td>
             <td>function() {}</td>
             <td>A callback that is triggered after the element has been made clickable</td>
@@ -103,7 +108,17 @@ $(function(){
     });
 });
 ```
-
+## Override the click event action
+```javascript
+$(function(){
+    $('#clickable-box-callback').find('.box').jqueryClickable({
+        callbackClickBefore: function(e) {
+            alert("Callback click action, prevent navigation");
+            return false; // prevent original action
+        }
+    });
+});
+```
 
 ## Development
 
